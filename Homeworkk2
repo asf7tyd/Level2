@@ -1,0 +1,8 @@
+a = int(input("Введите первое число: "))
+b = int(input("Введите второе число: "))
+def gcd(x, y):
+    while y:
+        x, y = y, x % y
+    return x
+    lcm = (a*b) // gcd(a, b)
+    print("Наименьшее общее кратное чисел", a, "и", b, ":", lcm)
