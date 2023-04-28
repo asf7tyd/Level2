@@ -1,0 +1,9 @@
+lst = [1, 2, 3, 4, 5]
+def sum_list(lst):
+    sum = 0
+    for num in lst:
+        sum += num
+    return sum
+sum = sum_list(lst)
+
+print("Сумма элементов списка", lst, ":", sum)
