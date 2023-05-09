@@ -1,0 +1,46 @@
+class Calculator:
+    def __init__(self):
+        self.memory = []
+
+    def add(self, x, y):
+        result = x + y
+        self.memory.append(result)
+        return result
+
+    def subtract(self, x, y):
+        result = x - y
+        self.memory.append(result)
+        return result
+
+    def multiply(self, x, y):
+        result = x * y
+        self.memory.append(result)
+        return result
+
+    def divide(self, x, y):
+        if y == 0:
+            return "Error: division by zero"
+        else:
+            result = x / y
+            self.memory.append(result)
+            return result
+
+    def clear_memory(self):
+        self.memory = []
+
+    def get_memory(self):
+        return self.memory
+
+
+calculator = Calculator()
+
+print(calculator.subtract(5, 2))
+print(calculator.multiply(4, 6))
+print(calculator.divide(10, 2))
+print(calculator.divide(10, 0))
+
+print(calculator.get_memory())
+
+calculator.clear_memory()
+
+print(calculator.get_memory())
