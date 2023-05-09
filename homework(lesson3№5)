@@ -1,0 +1,5 @@
+names = ['John', 'Alice', 'Bob']
+ages = [25, 30, 40]
+
+result = [f"{name} - {age}" for name, age in zip(names, ages)]
+print(result) # ['John - 25', 'Alice - 30', 'Bob - 40']
